@@ -278,31 +278,31 @@ if ( isset($_POST["ok"]) ) {
 <input type="hidden" name="treuhand[ID]" value="<?= $treuhand['ID'] ?>">
 <input type="hidden" name="ERPusr[ID]" value="<?= $ERPusr['ID'] ?>">
 
-<tr><th>Daten</th><th>Lx-ERP</th><th><?php echo $Shop ?></th><th>Shop</th></tr>
+<tr><th>Daten</th><th>SQL Ledger</th><th><?php echo $Shop ?></th><th>Shop</th></tr>
 <tr>
-    <td>db-Host</td>
+    <td>Datenbank-Host</td>
     <td colspan="2"><input type="text" name="ERPhost" size="25" value="<?= $ERPhost ?>"></td>
     <td><input type="text" name="SHOPhost" size="25" value="<?= $SHOPhost ?>"></td>
 </tr>
 <tr>
-    <td>db-Port</td>
+    <td>Datenbank-Port</td>
     <td colspan="2"><input type="text" name="ERPport" size="25" value="<?= $ERPport ?>"></td>
     <td><input type="text" name="SHOPport" size="25" value="<?= $SHOPport ?>"></td>
 </tr>
 <tr>
-    <td>Database</td>
-    <td colspan="2"><input type="text" name="ERPdbname" size="20" value="<?= $ERPdbname ?>"></td>
-    <td><input type="text" name="SHOPdbname" size="20" value="<?= $SHOPdbname ?>"></td>
+    <td>Datenbankname</td>
+    <td colspan="2"><input type="text" name="ERPdbname" size="25" value="<?= $ERPdbname ?>"></td>
+    <td><input type="text" name="SHOPdbname" size="25" value="<?= $SHOPdbname ?>"></td>
 </tr>
 <tr>
-    <td>db-User Name</td>
-    <td colspan="2"><input type="text" name="ERPuser" size="15" value="<?= $ERPuser ?>"></td>
-    <td><input type="text" name="SHOPuser" size="15" value="<?= $SHOPuser ?>"></td>
+    <td>Datenbank Benutzername</td>
+    <td colspan="2"><input type="text" name="ERPuser" size="25" value="<?= $ERPuser ?>"></td>
+    <td><input type="text" name="SHOPuser" size="25" value="<?= $SHOPuser ?>"></td>
 </tr>
 <tr>
-    <td>db-User PWD</td>
-    <td colspan="2"><input type="text" name="ERPpass" size="15" value="<?= $ERPpass ?>"></td>
-    <td><input type="text" name="SHOPpass" size="15" value="<?= $SHOPpass ?>"></td>
+    <td>Datenbank Benutzerpasswort</td>
+    <td colspan="2"><input type="text" name="ERPpass" size="25" value="<?= $ERPpass ?>"></td>
+    <td><input type="text" name="SHOPpass" size="25" value="<?= $SHOPpass ?>"></td>
 </tr>
 </tr>
     <td>Zeichensatz</td>
@@ -487,8 +487,9 @@ if ( isset($_POST["ok"]) ) {
 
 
 <tr><td colspan="4" align="center"><input type="submit" name="ok" value="sichern"></td></tr>
-</form>
+
 </table>
 </center>
+</form>
 </body>
 </html>
